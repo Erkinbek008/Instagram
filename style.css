@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    animation: bod 1s  infinite both alternate;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.box{
+    height:200px;
+    width:600px;
+    display: flex;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    animation: box 1s  100 both alternate-reverse;
+}
+ @keyframes box{
+    from{
+        transform: translate(100px,0);
+        background:red;
+        border-radius: 100px;
+    }
+}
+@keyframes bod {
+    from{
+        background:blue;
+    }
+    to{
+        background:greenyellow;
+    }
+
+}
