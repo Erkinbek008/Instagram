@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    animation: bod 1s  infinite both alternate;
+    animation: bod 5s  infinite both alternate;
 }
 .container{
     height: 100vh;
@@ -13,28 +13,37 @@ body{
     justify-content: center;
     align-items:center ;
 }
+a{
+
+    color: black;
+}
 .box{
     height:200px;
     width:600px;
     display: flex;
-    font-size: 70px;
+    font-size: 1px;
     justify-content: center;
     align-items: center;
-    animation: box 1s  100 both alternate-reverse;
+    animation: box 5s  100 both alternate-reverse;
+    border-radius: 50px;
+    border:10px solid blue;
+    
+
 }
  @keyframes box{
     from{
-        transform: translate(100px,0);
-        background:red;
-        border-radius: 100px;
+        transform: scale(99);
+        background:red;    }
+    to{
+        background-color:black;
+
     }
 }
 @keyframes bod {
     from{
-        background:blue;
+        background:red;
     }
     to{
-        background:greenyellow;
+        background:black;
     }
-
 }
