@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 body{
-    animation: bod 5s  infinite both alternate;
+    animation: bod 18s  infinite both alternate;
+}
+h2{
+    font-weight: 50;
+    font-size: 30px;
+    color: aqua;
+    text-align: center;
+    font-family:sans-serif;
 }
 .container{
     height: 100vh;
@@ -17,22 +24,27 @@ a{
 
     color: black;
 }
+
 .box{
     height:200px;
     width:600px;
     display: flex;
-    font-size: 1px;
+    font-size: 1cm;
+    color: aqua;
     justify-content: center;
     align-items: center;
-    animation: box 5s  100 both alternate-reverse;
-    border-radius: 50px;
+    animation: box 18s  100 both alternate-reverse;
+    border-radius: 59px;
     border:10px solid blue;
     
 
 }
+img{
+    background-size: cover
+}
  @keyframes box{
     from{
-        transform: scale(99);
+        transform: scale(2);
         background:red;    }
     to{
         background-color:black;
@@ -40,10 +52,19 @@ a{
     }
 }
 @keyframes bod {
-    from{
-        background:red;
+    0%{
+        background:black;
     }
-    to{
+    25%{
+        background:white;
+    }
+    50%{
+        background:black;
+    }
+    75%{
+        background:whitesmoke;   
+    }
+    100%{
         background:black;
     }
 }
